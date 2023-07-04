@@ -1,0 +1,171 @@
+.blog-section {
+    margin-top: 12.3938rem;
+}
+
+
+.options {
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    justify-content: space-between;
+    width: calc(100% - 1.25rem);
+    margin-top: 5.7438rem;
+    padding: 2.5rem 0 1.25rem;
+}
+
+.filters {
+    display: flex;
+    gap: .625rem;
+}
+
+.filters button, .add-post-btn {
+    color: #0266FF;
+    border: 1px solid #0266FF;
+    border-radius: 50px;
+    background-color: white;  
+}
+
+.filters button {
+    font-size: .875rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+}
+
+.add-post-btn {
+    font-size: 1.5rem;
+    padding: .3rem .7rem;
+}
+
+.add-post-btn span {
+    display: none;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(18rem,1fr));
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+.post-card {
+    width: 100%;
+    background-color: #F8F9FC;
+    border-radius: 6px;
+    position: relative;
+    transition: all 0.1s ease-in-out;
+}
+
+.post-card:hover {
+    background-color: #D7F8FF;
+}
+
+.post-card img {
+    object-fit: cover;
+}
+
+.post-card-content {
+    padding: .625rem 1.25rem;
+}
+
+.post-card h1, .post-card p   {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.post-card h1 {
+    font-size: 1.125rem;
+    -webkit-line-clamp: 1;
+    margin-bottom: .5rem;
+}
+
+.post-card p {
+    font-size: .875rem;
+    color: #625F87;
+    -webkit-line-clamp: 2;
+    margin-bottom: .625rem;
+}
+
+.post-card-footer {
+    display: flex;
+    gap: .8rem;
+    border-top: 1px solid #9D9DB5;
+    padding-top: 1rem;
+}
+
+.post-card-footer .date-author {
+    width: 65%;
+}
+
+.post-card span {
+    display: flex;
+    align-items: center;
+    font-size: .5625rem;
+    color: #9D9DB5;
+}
+
+.post-card span i {
+    font-size: 1.2rem;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.date-author {
+    margin-right: auto;
+}
+
+.image-placeholder {
+    background-color: lightgray;
+    width: 100%;
+    height: 165px;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+
+.comment-like-btns{
+    position: absolute;
+    right: 20px;
+    bottom: 4px;
+    display: flex;
+    gap: 10px;
+}
+
+button.active {
+    background-color: #0266FF;
+    color: white;
+}
+
+.liked {
+    color: #0266FF;
+}
+
+@media only screen and (min-width: 769px) {
+
+    .options {
+        width: calc(100% - 10rem);
+        margin-top: 5.85rem;
+        padding: 3.75rem 0 2.5rem;
+    }
+
+    .posts {
+        gap: 2.5rem;
+        margin-top: 15.45rem;
+    }
+
+    .add-post-btn {
+        display: flex;
+        align-items: center;
+        border-radius: .625rem;
+        padding: .5rem 1.25rem;
+    }
+
+    .add-post-btn span {
+        display: inline;
+        font-size: 1rem;
+    }
+}
+
+
+

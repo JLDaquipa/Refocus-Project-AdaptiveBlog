@@ -1,0 +1,49 @@
+
+.add-post-section h1 {
+    margin-bottom: 2.5rem;
+}
+
+.add-post-section form label {
+    display: inline-block;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.add-post-section form textarea, .image-uploader {
+    margin-bottom: 1.25rem;
+}
+
+.add-post-section form textarea[name="title"] {
+    padding: 1rem 1.25rem;
+    width: 100%;
+    border-radius: .375rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    border: 1px solid #9D9DB5;
+}
+
+.add-post-section form textarea[name="text"] {
+    resize: none;
+    height: 12.5rem;
+    margin-bottom: 1.25rem;
+}
+
+@media only screen and (min-width: 769px) {
+
+    .new-post-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap:3.75rem;
+    }
+
+    .add-post-section form {
+        min-width: 55%;
+    }
+
+    .new-post-container form button{
+        width: auto;
+        margin-right: auto;
+        padding: .75rem 3rem;
+    }
+}
